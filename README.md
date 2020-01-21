@@ -6,6 +6,9 @@ KeepMyShit is a Windows Application to Keep your Microphone Input Volume, Master
   <h3><a href="https://github.com/3VERv4/KeepMyShit">Windows KMS-Installer(soon)</a></h3>
   </center>
 <br>
+<h2>Preview</h2>
+<img src="https://www.bilder-upload.eu/upload/d0e20a-1579645597.gif"/>
+<br>
 <h2>License</h2>
 Open source under the GNU Affero General Public License v3.0
 <br>
