@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A71AE8F-71D6-4E33-AA8E-FA0CD0520BE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KeepMyShit</RootNamespace>
+    <AssemblyName>KeepMyShit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Main_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AudioSwitcher.AudioApi, Version=3.0.0.209, Culture=neutral, PublicKeyToken=fda5729e2db3a64f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AudioSwitcher.AudioApi.3.0.0\lib\net40\AudioSwitcher.AudioApi.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioSwitcher.AudioApi.CoreAudio, Version=3.0.0.209, Culture=neutral, PublicKeyToken=fda5729e2db3a64f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AudioSwitcher.AudioApi.CoreAudio.3.0.0.1\lib\net40\AudioSwitcher.AudioApi.CoreAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeepMyShitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeepMyShitForm.Designer.cs">
+      <DependentUpon>KeepMyShitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="KeepMyShitForm.resx">
+      <DependentUpon>KeepMyShitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-personal computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-visualization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-loading bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-tack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-filling cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-floppy disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\021-server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022-connectors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\023-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\024-wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\025-notifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\026-sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027-microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\029-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\031-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\032-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\033-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\034-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\035-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\036-image file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\037-video file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\038-audio file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\039-magnifying glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\040-red flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\041-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\042-tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\043-inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\044-email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\045-spam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\046-email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\047-email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\048-speech bubbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\049-emoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050-world globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.ico" />
+    <Content Include="Main_Icon.ico" />
+    <None Include="Resources\036-add.png" />
+    <None Include="Resources\035-calendar.png" />
+    <None Include="Resources\034-camera.png" />
+    <None Include="Resources\033-cancel.png" />
+    <None Include="Resources\032-check.png" />
+    <None Include="Resources\031-attach.png" />
+    <None Include="Resources\030-clock.png" />
+    <None Include="Resources\029-settings.png" />
+    <None Include="Resources\028-cancel-1.png" />
+    <None Include="Resources\027-load.png" />
+    <None Include="Resources\026-download.png" />
+    <None Include="Resources\025-file.png" />
+    <None Include="Resources\024-edit.png" />
+    <None Include="Resources\023-message.png" />
+    <None Include="Resources\022-arrows.png" />
+    <None Include="Resources\021-heart.png" />
+    <None Include="Resources\020-home.png" />
+    <None Include="Resources\019-image.png" />
+    <None Include="Resources\018-label.png" />
+    <None Include="Resources\017-menu.png" />
+    <None Include="Resources\016-microphone.png" />
+    <None Include="Resources\015-mute.png" />
+    <None Include="Resources\014-message-1.png" />
+    <None Include="Resources\013-pause.png" />
+    <None Include="Resources\012-pencil.png" />
+    <None Include="Resources\011-location-pin.png" />
+    <None Include="Resources\010-multimedia.png" />
+    <None Include="Resources\009-sending.png" />
+    <None Include="Resources\008-sound.png" />
+    <None Include="Resources\007-speech-bubble.png" />
+    <None Include="Resources\006-delete.png" />
+    <None Include="Resources\005-opposite-arrows.png" />
+    <None Include="Resources\004-upload.png" />
+    <None Include="Resources\003-user.png" />
+    <None Include="Resources\002-users.png" />
+    <None Include="Resources\001-zoom.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

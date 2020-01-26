@@ -1,0 +1,14 @@
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\KeepMyShit.exe.config
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\KeepMyShit.exe
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\KeepMyShit.pdb
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\AudioSwitcher.AudioApi.CoreAudio.dll
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\AudioSwitcher.AudioApi.dll
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\NAudio.dll
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\bin\Release\NAudio.xml
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.csprojAssemblyReference.cache
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.KMSWindow.resources
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.Properties.Resources.resources
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.csproj.GenerateResource.cache
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.csproj.CopyComplete
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.exe
+C:\Users\3VER\source\repos\KeepMyShit\KeepMyShit\obj\Release\KeepMyShit.pdb
